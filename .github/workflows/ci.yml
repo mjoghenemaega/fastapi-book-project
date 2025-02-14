@@ -10,7 +10,7 @@ on:
 jobs:
   test:
     name: Run Tests
-    runs-on: ubuntu-latest  # Use the latest Ubuntu environment
+    runs-on: ubuntu-latest  # the latest Ubuntu environment
 
     steps:
       - name: Checkout repository
