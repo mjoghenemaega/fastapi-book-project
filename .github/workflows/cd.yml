@@ -16,7 +16,7 @@ jobs:
         username: ubuntu # Remote EC2 user for Amazon Linux
         key: ${{ secrets.AWS_SECRET }}
         script: |
-          cd /home/ec2-user/
+          cd /home/ubuntu/fastapi-book-project
           git pull origin main
           python3 -m venv venv
           source venv/bin/activate
