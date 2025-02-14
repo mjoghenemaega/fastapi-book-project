@@ -13,7 +13,7 @@ jobs:
       uses: appleboy/ssh-action@v0.1.10
       with:
         host: ${{ secrets.AWS_HOST }}
-        username: ec2-user  # Remote EC2 user for Amazon Linux
+        username: ubuntu # Remote EC2 user for Amazon Linux
         key: ${{ secrets.AWS_SECRET }}
         script: |
           cd /home/ec2-user/
